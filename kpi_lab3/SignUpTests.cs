@@ -16,6 +16,7 @@ namespace kpi_lab3
             var options = new ChromeOptions();
             options.AddArgument("--no-sandbox");
             options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--headless");
             driver = new ChromeDriver(options);
             var guid = Guid.NewGuid().ToString().Substring(0, 4);
             user = new User
