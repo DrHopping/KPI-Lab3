@@ -14,7 +14,9 @@ namespace kpi_lab3
         private User user;
         public LoginTests()
         {
-            driver = new ChromeDriver();
+            var options = new ChromeOptions();
+            options.AddArgument("--no-sandbox");
+            driver = new ChromeDriver(options);
             var guid = Guid.NewGuid().ToString().Substring(0, 4);
             user = new User
             {
