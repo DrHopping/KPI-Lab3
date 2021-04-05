@@ -16,7 +16,7 @@ namespace kpi_lab3.PageObjects
         {
             _driver = driver;
             driver.Navigate().GoToUrl($"{url}/signup");
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             PageFactory.InitElements(driver, this);
         }
 

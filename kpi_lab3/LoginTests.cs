@@ -30,7 +30,7 @@ namespace kpi_lab3
             var page = new LoginPageObject(driver);
             page.EnterUsername(user.Username);
             page.EnterPassword(user.Password + "!");
-            //page.Submit();
+            page.Submit();
 
             var actual = page.IsErrorVisible();
             var expected = true;
