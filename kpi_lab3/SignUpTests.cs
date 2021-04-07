@@ -67,7 +67,7 @@ namespace kpi_lab3
             page.EnterPassword(user.Password);
             page.EnterConfirmPassword(user.Password);
             page.EnterEmail(user.Email);
-            page.Submit();
+            //page.Submit();
 
             var actual = page.IsSignedIn();
             var expected = true;
